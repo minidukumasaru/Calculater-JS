@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Asserts/styles/style.css">
 </head>
 <body>
+<section class="calculator">
+    <div id="display" class="display">0</div>
+    <button class="button" onclick="clearDisplay()">C</button>
+    <button class="button" onclick="appendCharacter('%')">%</button>
+    <button class="button" onclick="appendCharacter('/')">/</button>
+    <button class="button" onclick="backspace()">←</button>
 
+    <button class="button" onclick="appendCharacter('7')">7</button>
+    <button class="button" onclick="appendCharacter('8')">8</button>
+    <button class="button" onclick="appendCharacter('9')">9</button>
+    <button class="button" onclick="appendCharacter('*')">*</button>
+
+
+    <button class="button" onclick="appendCharacter('4')">4</button>
+    <button class="button" onclick="appendCharacter('5')">5</button>
+    <button class="button" onclick="appendCharacter('6')">6</button>
+    <button class="button" onclick="appendCharacter('-')">-</button>
+
+    <button class="button" onclick="appendCharacter('1')">1</button>
+    <button class="button" onclick="appendCharacter('2')">2</button>
+    <button class="button" onclick="appendCharacter('3')">3</button>
+    <button class="button" onclick="appendCharacter('+')">+</button>
+
+    <button class="button zero" onclick="appendCharacter('0')">0</button>
+    <button class="button" onclick="appendCharacter('.')">.</button>
+    <button class="button equals" onclick="calculate()">=</button>
+</section>
+
+<script src="Asserts/lib/jquery-3.7.1.min.js"></script>
+<script src="Asserts/Js%20file/Script.js"></script>
 </body>
 </html>
